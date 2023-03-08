@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=League+Gothic&family=Trispace:wght@200&display=swap" rel="stylesheet">
+<style>
+    /* css reset */
+    body{
+        font-family: 'Baloo 2', cursive;
+        color: white;
+        margin:0px;
+        padding: 0px;
+        background:url(img/weightlifting-ga404e4e52_1920.jpg);
+        
+    }
+    .left{
+        position: absolute;
+        display: inline-block;
+        left: 60px;
+        top: 20px;
+        /* border: 2px solid red; */
+    }
+    .left img{
+        width: 133px;
+        margin: -24px;
+    }
+    .left div{
+        
+        line-height: 19px;
+        font-size: 16px;
+        text-align: center;
+
+    }
+    .mid{
+        display: block;
+        width: 36%;
+        margin:29px auto;
+        /* border: 2px solid blue; */
+        
+    }
+    .right{
+        
+        position: absolute;
+        display: inline-block;
+        right: 34px;
+        top: 20px;
+        /* border:2px solid green; */
+    }
+    .navbar
+    {
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 20px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding:34px 19px;
+    }
+    .navbar li a:hover,.navbar li a.active{
+        text-decoration: underline;
+        color: grey;
+
+    }
+    .btn
+    {
+        font-family: 'Baloo 2', cursive;
+        margin: 21px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgba(255, 252, 252, 0.436);
+    }
+    .container
+    {
+        
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+        
+    }
+    .formgroup input{
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 400px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 75%;
+        height: 35px;
+        border-radius: 5px;
+       
+        background-color:beige;
+        margin: 20px auto;
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- left for logo -->
+        <div class="left">
+            <img src="img/gym-g94bb349b0_640.png" alt="">
+            <div>
+                Royal Fitness
+            </div>
+        </div>
+        <!-- mid for nav bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right for buttons -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+
+    </header>
+    <div class="container">
+       <h1>JOIN The Best GYM ASAP</h1> 
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter Your Name : ">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter Your Age : ">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter Your Gender : ">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter Your Locality : ">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter Your Email ID : ">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter Your Phone Number : ">
+            </div>
+            <button class="button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
